@@ -1,5 +1,18 @@
 {
+    "version": "2.0.0",
     "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "numeritos.c",
+                "-o",
+                "numeritos"
+            ],
+            "group": "build"
+        },
         {
             "type": "cppbuild",
             "label": "C/C++: gcc.exe compilar archivo activo",
@@ -12,7 +25,7 @@
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "C:\\msys64\\ucrt64\\bin"
             },
             "problemMatcher": [
                 "$gcc"
@@ -23,6 +36,5 @@
             },
             "detail": "Tarea generada por el depurador."
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
