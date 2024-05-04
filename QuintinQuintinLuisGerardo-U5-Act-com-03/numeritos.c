@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 int
 main ()
@@ -19,6 +20,9 @@ main ()
 		}
 	}
   printf ("\n");
+
+  printf("Presione cualquier tecla para salir...\n");
+	getch();
 
   return 0;
 }
